@@ -1,0 +1,144 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e3a8a,
+    #0ea5e9
+  );
+  min-height: 100vh;
+  padding: 30px;
+  color: white;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #dbeafe;
+  font-size: 1.1rem;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(320px, 1fr)
+  );
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+input::placeholder {
+  color: #e2e8f0;
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #22c55e;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #16a34a;
+  transform: scale(1.03);
+}
+
+.dashboard-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.request-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 18px;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+  border-left: 5px solid #22c55e;
+}
+
+.request-card:hover {
+  transform: scale(1.02);
+}
+
+.request-card h4 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.request-card p {
+  margin: 5px 0;
+  color: #e2e8f0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #dbeafe;
+  font-size: 14px;
+}
